@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR/Barcode Scanner Web</title>
+    <style>
+        body { background: #232323; color: #fafafa; text-align: center; }
+        h1 { margin-top: 32px; }
+        .video-box { margin: 30px auto; width: 90%; max-width: 900px; }
+    </style>
+</head>
+<body>
+    <h1>🕵️ Real-Time QR/Barcode Scanner</h1>
+    <div class="video-box">
+        <img src="{{ url_for('video_feed') }}" width="100%">
+    </div>
+    <p>Present a QR or Barcode in front of your camera.<br>Detected content will show in the overlay bar at the bottom.</p>
+</body>
+</html>
